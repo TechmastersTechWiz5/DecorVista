@@ -1,0 +1,129 @@
+/* Ensure the pagination controls are displayed in a single line */
+.dataTables_wrapper .dataTables_paginate {
+  display: flex;
+  justify-content: center; /* Center the pagination */
+  margin: 10px 0; /* Add vertical spacing if needed */
+}
+
+/* General pagination button styling */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  display: inline-block;
+  margin: 0; /* Remove margin between buttons */
+  border: 1px solid #dee2e6; /* Default border color */
+  border-radius: 0.25rem; /* Rounded corners */
+}
+
+/* Styling for all page buttons */
+.dataTables_wrapper .dataTables_paginate .paginate_button a {
+  display: block;
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  text-align: center;
+  color: #000 !important; /* Default text color */
+  text-decoration: none; /* Remove underline */
+  background-color: #fff !important; /* Default background color */
+}
+
+/* Hover effect for page buttons */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+  background-color: rgba(255, 165, 0, 0.1) !important; /* Light orange background on hover */
+  color: #ffa500 !important; /* Orange text color on hover */
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+  background: #ff6c2f !important;
+  color: white !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+  background: #ff6c2f !important;
+  color: white !important;
+  border: 1px solid #dee2e6 !important;
+}
+/* Styling for the current (selected) page button */
+
+paginate_button.current a {
+  background: #ff6c2f !important; /* Orange background for the selected page */
+  color: #fff !important; /* White text color for the selected page */
+}
+/* Styling for "Previous" and "Next" buttons */
+.dataTables_wrapper .dataTables_paginate .paginate_button.previous.paginate_button.disabled a{
+  border: 1px solid #dee2e6 !important; /* Black border for Previous and Next buttons */
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.next a {
+  border: 1px solid #dee2e6 !important; /* Black border for Previous and Next buttons */
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover{
+  border: 1px solid #dee2e6 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover{
+  color: white !important;
+}
+/* Styling for disabled buttons (e.g., Previous/Next when at first/last page) */
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled a {
+  color: #6c757d !important; /* Disabled button text color */
+  background-color: #fff !important; /* Disabled button background color */
+  border: 1px solid #000 !important; /* Black border for disabled buttons */
+  pointer-events: none; /* Disable interaction */
+}
+
+/* Remove space between pagination buttons */
+.dataTables_wrapper .dataTables_paginate .page-item {
+  margin: 0 !important; /* Remove margin */
+}
+
+/* Ensure consistent button size and border */
+.dataTables_wrapper .dataTables_paginate .page-link {
+  padding: 0.5rem 1rem !important; /* Ensure button padding is consistent */
+  border-radius: 0.25rem !important; /* Rounded corners */
+  border: 1px solid #dee2e6 !important; /* Default border color */
+}
+
+/* Align pagination links vertically */
+.dataTables_wrapper .dataTables_paginate .page-item {
+  display: inline-block !important; /* Ensure buttons are inline */
+}
+
+/* Consistent hover effect */
+.dataTables_wrapper .dataTables_paginate .page-link:hover {
+  background-color: rgba(255, 165, 0, 0.1) !important; /* Light orange background on hover */
+  color: #ffa500 !important; /* Orange text color on hover */
+}
+
+
+
+
+
+/* Custom loader styles for DataTables */
+.dataTables_processing {
+  position: absolute; /* Ensure the loader is positioned correctly */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning */
+  color: #ff6c2f; /* Custom loader color */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 10px; /* Add padding if needed */
+  border-radius: 4px; /* Round corners if needed */
+}
+
+/* Change the appearance of the spinner or text inside the loader */
+div.dataTables_processing>div:last-child>div {
+  background: #ff6c2f !important; /* Custom text color inside the loader */
+}
+
+.dataTables_wrapper .dataTables_filter input{
+  border-radius: 20px !important;
+
+}
+
+.dataTables_wrapper .dataTables_filter input::placeholder {
+  color: grey; /* Change the color of the placeholder text */
+  font-size: 14px; /* Change the font size of the placeholder text */
+  font-style: italic; /* Change the font style of the placeholder text */
+}
+
+
+.dataTables_wrapper .dataTables_filter label{
+  font-weight: 700;
+}
